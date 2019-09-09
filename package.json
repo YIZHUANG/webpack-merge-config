@@ -1,6 +1,6 @@
 {
   "name": "webpack-merge-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Merges webpack config in a smarter way as an alternative to webpack-merge that promotes code reuse.",
   "main": "./build/main.js",
   "scripts": {

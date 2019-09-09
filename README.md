@@ -1,6 +1,8 @@
-<h1 align="center">Welcome to webpack-merge-config 👋</h1>
-<p>
+# Welcome to webpack-merge-config 👋
+
 [![npm version](https://badge.fury.io/js/webpack-merge-config.svg)](https://www.npmjs.com/package/webpack-merge-config)
+
+<p>
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/YIZHUANG/webpack-merge-config">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />

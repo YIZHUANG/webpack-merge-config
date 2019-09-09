@@ -1,0 +1,34 @@
+{
+  "name": "webpack-merge-config",
+  "version": "1.0.0",
+  "description": "Merges webpack config in a smarter way as an alternative to webpack-merge that promotes code reuse.",
+  "main": "./build/index.js",
+  "scripts": {
+    "complie": "babel src -d build",
+    "minify": "node minify.js",
+    "build": "npm run complie && npm run minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YIZHUANG/webpack-merge-config"
+  },
+  "bugs": {
+    "url": "https://github.com/YIZHUANG/webpack-merge-config/issues"
+  },
+  "author": "YIZHUANG",
+  "license": "MIT",
+  "keywords": [
+    "JavaScript",
+    "Webpack",
+    "Webpack config",
+    "Deep merge"
+  ],
+  "homepage": "https://github.com/YIZHUANG/webpack-merge-config",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "lodash": "^4.17.15",
+    "uglify-js": "^3.6.0"
+  }
+}

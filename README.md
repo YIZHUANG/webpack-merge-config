@@ -53,7 +53,12 @@ const config2 = {
 
 const finalConfig = merge(config1, config2);
 
-In webpack-merge the output will be:
+```
+
+In webpack-merge the output will be the following which duplicates the same loaders:
+
+```
+const finalConfig = {
   module: {
     rules: [
       {
@@ -75,8 +80,13 @@ In webpack-merge the output will be:
       }
     ],
   },
+ }
+```
 
-In webpack-config-merge it will become:
+In webpack-merge-config it will be merged instead as:
+
+```
+const finalConfig = {
   module: {
     rules: [
       {
@@ -90,9 +100,10 @@ In webpack-config-merge it will become:
             options: { importLoaders: 1 },
           },
         ],
-      }
+      },
     ],
   },
+ }
 ```
 
 ## Install
@@ -104,7 +115,9 @@ const merge = require('webpack-config-merge');
 module.exports = merge(config1, config2, {
   priority: 2
 });
-// if priority is 2, the lib will use unshift instead of push, this is useful for CSS related config. //              //Otherwise, leave it empty.
+// If priority is 2, the lib will use unshift instead of push, this is useful for CSS related config.
+// For example, appends MiniCssExtractPlugin to the front.
+// Else, the third argument can be left empty.
 ```
 
 ## More examples

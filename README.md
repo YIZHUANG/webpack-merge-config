@@ -14,6 +14,8 @@
 
 ## Inspiration
 
+Why use this instead of webpack-merge?
+
 See the followings:
 
 ```
